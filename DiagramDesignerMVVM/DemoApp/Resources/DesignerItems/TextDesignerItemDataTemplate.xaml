@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:DemoApp">
+
+    <!-- DataTemplate for DesignerCanvas look and feel -->
+    <DataTemplate DataType="{x:Type local:TextDesignerItemViewModel}">
+        <Grid>
+            <Label Content="{Binding Content}" Background="{Binding Background}" IsHitTestVisible="False" Tag ="setting"/>
+            <Button HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="5"
+                    Template="{StaticResource infoButtonTemplate}"
+                    Command="{Binding ShowDataChangeWindowCommand}" />
+        </Grid>
+    </DataTemplate>
+
+    <!-- DataTemplate for Popup look and feel -->
+    <DataTemplate DataType="{x:Type local:TextDesignerItemData}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Content" Margin="5" />
+            <TextBox Grid.Row="1" HorizontalAlignment="Left" Text="{Binding Content}" Width="150" Margin="5" />
+
+            <Label Grid.Row="2" Content="Color" Margin="5" />
+            <TextBox Grid.Row="3" HorizontalAlignment="Left" Text="{Binding Color}" Width="150" Margin="5" />
+
+        </Grid>
+    </DataTemplate>
+
+
+</ResourceDictionary>

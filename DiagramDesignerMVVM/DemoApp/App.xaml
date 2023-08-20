@@ -23,6 +23,7 @@
                 <ResourceDictionary Source="Resources/DesignerItems/SettingsDesignerItemDataTemplate.xaml" />
                 <ResourceDictionary Source="Resources/DesignerItems/PersistDesignerItemDataTemplate.xaml" />
                 <ResourceDictionary Source="Resources/DesignerItems/GroupingDesignerItemDataTemplate.xaml" />
+                <ResourceDictionary Source="Resources/DesignerItems/TextDesignerItemDataTemplate.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

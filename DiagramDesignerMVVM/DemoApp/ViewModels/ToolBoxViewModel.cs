@@ -16,6 +16,7 @@ namespace DemoApp
         {
             toolBoxItems.Add(new ToolBoxData("../Images/Setting.png", typeof(SettingsDesignerItemViewModel)));
             toolBoxItems.Add(new ToolBoxData("../Images/Persist.png", typeof(PersistDesignerItemViewModel)));
+            toolBoxItems.Add(new ToolBoxData("../Images/xia.png", typeof(TextDesignerItemViewModel)));
         }
 
         public List<ToolBoxData> ToolBoxItems
